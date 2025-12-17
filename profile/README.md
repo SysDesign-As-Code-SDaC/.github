@@ -17,41 +17,53 @@ Transform system design from static diagrams into **living, executable specifica
 
 ## 🧩 Core Components
 
-| Repository | Purpose |
-|------------|---------|
-| **[aiagentsuite](https://github.com/jimmyjdejesus-cmyk/aiagentsuite)** | Enterprise LSP/MCP framework with VDE methodology |
-| **template-heaven** | Interactive system design templates powered by LLMs |
-| **openspec** | OpenAPI + System Design spec generator |
+| Repository | Purpose | Status |
+|------------|---------|--------|
+| **[aiagentsuite](https://github.com/jimmyjdejesus-cmyk/aiagentsuite)** | Enterprise LSP/MCP framework with VDE methodology | ✅ Production |
+| **[template-heaven](https://github.com/Jimmy-Dejesus/template-heaven)** | Interactive system design templates powered by LLMs | ✅ 140 tests |
+| **openspec** | OpenAPI + System Design spec generator | 🚧 Planned |
 
 ## 🔧 What We Build
 
 - **LLM-Powered Design Tools** — Interactive architecture creation with AI assistance
-- **Code-First Templates** — System design patterns as reusable code
+- **Code-First Templates** — 24 technology stack categories with quality scoring
+- **Architecture Questionnaire** — Auto-generated system design docs
 - **Automated Project Management** — GitHub Actions for agentic issue tracking
-- **Protocol Engines** — DSL for development workflows and standards
+- **MCP Server Integration** — Model Context Protocol for AI tooling
 
 ## 🚀 Getting Started
 
 ```bash
-# Clone the aiagentsuite framework
-git clone https://github.com/jimmyjdejesus-cmyk/aiagentsuite.git
+# Clone template-heaven (primary tool)
+git clone https://github.com/Jimmy-Dejesus/template-heaven.git
+cd template-heaven
+uv sync
 
-# Install and initialize
-pip install -e .
-aiagentsuite init
+# Launch the interactive wizard
+uv run templateheaven init
+
+# Or start the REST API
+uv run uvicorn templateheaven.api.main:app --reload
 ```
 
 ## 📚 Key Features
 
+### Template Heaven
+- **24 Technology Stacks** — Frontend, Backend, AI/ML, DevOps, and more
+- **REST API** — FastAPI with Swagger/OpenAPI documentation
+- **Architecture Questionnaire** — Mandatory system design questions
+- **LLM Auto-Fill** — AI-powered questionnaire completion
+- **GitHub Integration** — Live template discovery and scoring
+
+### AI Agent Suite
 - **Vibe-Driven Engineering (VDE)** — Trust, but verify. Intent over implementation.
 - **Memory Bank** — Persistent context for AI-assisted development
 - **Protocol Library** — Secure Code, Feature Dev, Security Audit workflows
-- **Multi-Platform** — Python + TypeScript LSP/MCP implementations
 
 ---
 
 <div align="center">
 
-**Building the future of system design, one commit at a time.**
+**Maintained by [@jimmyjdejesus-cmyk](https://github.com/jimmyjdejesus-cmyk) & [@Jimmy-Dejesus](https://github.com/Jimmy-Dejesus)**
 
 </div>
