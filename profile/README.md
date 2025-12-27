@@ -146,6 +146,20 @@ sdac security scan --fail-on-high
 - **ADR Management** — Architecture Decision Records
 - **Living Documentation** — Always up-to-date
 
+## 🛠️ Adding New Tools
+
+Want to add a new tool to the collection? We have a comprehensive template:
+
+- **[Tool Template Guide](https://github.com/SysDesign-As-Code-SDaC/.github/blob/main/ADDING_NEW_TOOL.md)** - Complete step-by-step guide
+- **[Quick Start Script](https://github.com/SysDesign-As-Code-SDaC/.github/tree/main/tool-template)** - Automated tool creation
+- **[Integration Guide](https://github.com/SysDesign-As-Code-SDaC/.github/tree/main/tool-template/INTEGRATION_GUIDE.md)** - How to integrate with the bundle
+
+Quick start:
+```bash
+cd .github/tool-template
+./QUICK_START.sh my-new-tool "Description"
+```
+
 ---
 
 <div align="center">
