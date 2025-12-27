@@ -1,0 +1,39 @@
+# CODEOWNERS file for SysDesign-As-Code organization
+# See: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Organization maintainers
+* @jimmyjdejesus-cmyk @Jimmy-Dejesus
+
+# Master bundle
+/sdac-bundle/ @jimmyjdejesus-cmyk
+
+# Core components
+/template-heaven/ @jimmyjdejesus-cmyk
+/aiagentsuite/ @jimmyjdejesus-cmyk
+/OpenSpec/ @jimmyjdejesus-cmyk
+/custom-openspec/ @jimmyjdejesus-cmyk
+
+# Supporting components
+/contract-testing/ @jimmyjdejesus-cmyk
+/api-contracts/ @jimmyjdejesus-cmyk
+/security-scanning/ @jimmyjdejesus-cmyk
+/mcp-servers/ @jimmyjdejesus-cmyk
+/test-automation/ @jimmyjdejesus-cmyk
+/docs-automation/ @jimmyjdejesus-cmyk
+
+# GitHub configuration
+/.github/ @jimmyjdejesus-cmyk
+
+# Documentation
+*.md @jimmyjdejesus-cmyk
+/docs/ @jimmyjdejesus-cmyk
+
+# Workflows
+/.github/workflows/ @jimmyjdejesus-cmyk
+
+# Configuration files
+/pyproject.toml @jimmyjdejesus-cmyk
+/package.json @jimmyjdejesus-cmyk
+/requirements.txt @jimmyjdejesus-cmyk
+/setup.py @jimmyjdejesus-cmyk
+

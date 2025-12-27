@@ -1,0 +1,101 @@
+name: 🐛 Bug Report
+description: File a bug report to help us improve
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear and concise description of what the bug is
+      placeholder: Describe the bug...
+    validations:
+      required: true
+  
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Steps to reproduce the behavior
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. See error
+    validations:
+      required: true
+  
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What you expected to happen
+      placeholder: A clear description of what you expected to happen
+    validations:
+      required: true
+  
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened
+      placeholder: A clear description of what actually happened
+    validations:
+      required: true
+  
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs/Error Messages
+      description: Relevant logs, error messages, or stack traces
+      render: shell
+      placeholder: Paste logs here...
+  
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      description: Which component is affected?
+      options:
+        - sdac-bundle
+        - template-heaven
+        - aiagentsuite
+        - OpenSpec
+        - custom-openspec
+        - contract-testing
+        - api-contracts
+        - security-scanning
+        - mcp-servers
+        - test-automation
+        - docs-automation
+        - Other
+    validations:
+      required: true
+  
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Version or commit hash
+      placeholder: "1.0.0 or abc1234"
+  
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Environment details
+      placeholder: |
+        - OS: [e.g., macOS 14.0]
+        - Python: [e.g., 3.11]
+        - Node: [e.g., 20.0.0]
+  
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other context, screenshots, or information
+

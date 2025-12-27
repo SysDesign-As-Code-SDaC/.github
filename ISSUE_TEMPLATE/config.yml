@@ -1,0 +1,15 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussions
+    url: https://github.com/SysDesign-As-Code-SDaC/.github/discussions
+    about: Ask questions and discuss ideas
+  - name: 📚 Documentation
+    url: https://github.com/SysDesign-As-Code-SDaC/sdac-bundle
+    about: Check the documentation
+  - name: 🐛 Bug Report
+    url: https://github.com/SysDesign-As-Code-SDaC/.github/issues/new?template=bug_report.yml
+    about: Report a bug
+  - name: ✨ Feature Request
+    url: https://github.com/SysDesign-As-Code-SDaC/.github/issues/new?template=feature_request.yml
+    about: Suggest a new feature
+

@@ -1,0 +1,76 @@
+# Auto-labeling configuration
+# See: https://github.com/actions/labeler
+
+# Component labels based on file paths
+sdac-bundle:
+  - sdac-bundle/**/*
+  - sdac_bundle/**/*
+
+template-heaven:
+  - template-heaven/**/*
+  - templateheaven/**/*
+
+aiagentsuite:
+  - aiagentsuite/**/*
+  - src/aiagentsuite/**/*
+
+openspec:
+  - OpenSpec/**/*
+  - openspec/**/*
+
+custom-openspec:
+  - custom-openspec/**/*
+
+contract-testing:
+  - contract-testing/**/*
+  - contract_testing/**/*
+
+api-contracts:
+  - api-contracts/**/*
+  - api_contracts/**/*
+
+security-scanning:
+  - security-scanning/**/*
+  - security_scanning/**/*
+
+mcp-servers:
+  - mcp-servers/**/*
+  - mcp_servers/**/*
+
+test-automation:
+  - test-automation/**/*
+  - test_automation/**/*
+
+docs-automation:
+  - docs-automation/**/*
+  - docs_automation/**/*
+
+# Type labels based on file extensions
+documentation:
+  - '**/*.md'
+  - '**/*.rst'
+  - '**/docs/**/*'
+
+python:
+  - '**/*.py'
+  - '**/pyproject.toml'
+  - '**/requirements*.txt'
+  - '**/setup.py'
+
+typescript:
+  - '**/*.ts'
+  - '**/*.tsx'
+  - '**/tsconfig.json'
+
+javascript:
+  - '**/*.js'
+  - '**/*.jsx'
+  - '**/package.json'
+
+yaml:
+  - '**/*.yml'
+  - '**/*.yaml'
+
+github-actions:
+  - '.github/workflows/**/*'
+

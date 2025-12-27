@@ -1,0 +1,47 @@
+name: ❓ Question
+description: Ask a question about the project
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a question? We're here to help!
+  
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What would you like to know?
+      placeholder: Your question here...
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      description: Which component is your question about?
+      options:
+        - General/All
+        - sdac-bundle
+        - template-heaven
+        - aiagentsuite
+        - OpenSpec
+        - custom-openspec
+        - contract-testing
+        - api-contracts
+        - security-scanning
+        - mcp-servers
+        - test-automation
+        - docs-automation
+    validations:
+      required: true
+  
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Any additional context that might help answer your question
+      placeholder: What have you tried? What documentation have you checked?
+
