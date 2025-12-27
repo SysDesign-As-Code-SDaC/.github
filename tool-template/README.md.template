@@ -1,0 +1,95 @@
+# {{TOOL_NAME_TITLE}}
+
+**{{TOOL_DESCRIPTION}}**
+
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://python.org)
+
+## Status
+
+🚧 **In Development** - Integration with SDAC Bundle in progress.
+
+## Purpose
+
+{{TOOL_PURPOSE}}
+
+## Features
+
+- Feature 1
+- Feature 2
+- Feature 3
+
+## Installation
+
+```bash
+# Install from source
+pip install -e .
+
+# Or via SDAC bundle
+cd ../sdac-bundle
+make install
+```
+
+## Usage
+
+### Via SDAC CLI
+
+```bash
+sdac {{TOOL_NAME}} command --option value
+```
+
+### Direct Usage
+
+```bash
+sdac-{{TOOL_NAME}} command --option value
+```
+
+## Integration
+
+This component integrates with:
+- **Component 1** - Integration description
+- **Component 2** - Integration description
+
+## Configuration
+
+Add to `.sdac/config.yaml`:
+
+```yaml
+{{TOOL_NAME}}:
+  setting1: "value"
+  setting2: 100
+```
+
+## Examples
+
+```python
+from {{TOOL_MODULE}} import {{TOOL_CLASS}}
+
+tool = {{TOOL_CLASS}}()
+result = tool.process()
+```
+
+## Development
+
+```bash
+# Install dev dependencies
+pip install -e ".[dev]"
+
+# Run tests
+pytest
+
+# Format code
+black .
+
+# Lint code
+ruff check .
+```
+
+## Contributing
+
+See [CONTRIBUTING.md](../../.github/CONTRIBUTING.md)
+
+## License
+
+MIT License - see [LICENSE](LICENSE) for details.
+

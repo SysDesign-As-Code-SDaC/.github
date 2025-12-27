@@ -1,0 +1,59 @@
+"""CLI for {{TOOL_NAME}}."""
+
+import click
+from rich.console import Console
+from rich.table import Table
+
+console = Console()
+
+
+@click.group()
+def main():
+    """{{TOOL_NAME_TITLE}} CLI."""
+    pass
+
+
+@main.command()
+@click.option("--option", help="Example option")
+@click.argument("input")
+def command(option, input):
+    """Example command description."""
+    console.print(f"[cyan]Processing: {input}[/cyan]")
+    
+    if option:
+        console.print(f"  Option: {option}")
+    
+    # Your implementation here
+    result = process(input, option)
+    
+    if result:
+        console.print("[green]✓[/green] Command completed successfully")
+    else:
+        console.print("[red]✗[/red] Command failed")
+
+
+@main.command()
+def status():
+    """Show tool status."""
+    console.print("[cyan]{{TOOL_NAME_TITLE}} Status[/cyan]")
+    
+    table = Table(title="Status")
+    table.add_column("Component", style="cyan")
+    table.add_column("Status", style="green")
+    
+    table.add_row("Core", "✅ Ready")
+    table.add_row("CLI", "✅ Ready")
+    table.add_row("Integration", "🚧 In Progress")
+    
+    console.print(table)
+
+
+def process(input: str, option: str = None) -> bool:
+    """Process input."""
+    # Implementation
+    return True
+
+
+if __name__ == "__main__":
+    main()
+

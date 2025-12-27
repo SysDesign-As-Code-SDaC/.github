@@ -1,0 +1,38 @@
+"""Tests for {{TOOL_NAME}}."""
+
+import pytest
+from {{TOOL_MODULE}} import {{TOOL_CLASS}}
+from {{TOOL_MODULE}}.cli import main
+from click.testing import CliRunner
+
+
+class Test{{TOOL_CLASS}}:
+    """Test {{TOOL_CLASS}}."""
+    
+    def test_initialization(self):
+        """Test tool initialization."""
+        tool = {{TOOL_CLASS}}()
+        assert tool is not None
+    
+    def test_basic_functionality(self):
+        """Test basic functionality."""
+        tool = {{TOOL_CLASS}}()
+        result = tool.process("test")
+        assert result is not None
+
+
+class TestCLI:
+    """Test CLI interface."""
+    
+    def test_command(self):
+        """Test CLI command."""
+        runner = CliRunner()
+        result = runner.invoke(main, ["command", "test"])
+        assert result.exit_code == 0
+    
+    def test_status(self):
+        """Test status command."""
+        runner = CliRunner()
+        result = runner.invoke(main, ["status"])
+        assert result.exit_code == 0
+
